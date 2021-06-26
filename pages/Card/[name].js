@@ -1,10 +1,13 @@
 import {useRouter} from 'next/router'
 import Head from 'next/head'
 import React from 'react'
-export default function Card(props) {
+export default function Card({title, content}) {
     const router = useRouter()
     const description = 'это моя компания'
-    const title = router.query.name+'dsad'
+    const [title, setTitle] = React.useState('')
+    React.useEffect(() => {
+        setTitle(router.query.name)
+    })
     const urimg = 'https://sun9-53.userapi.com/impg/kr5c5dvuzJiaM4KDx8qTWwMvUZNpITCPBXtqjQ/cCJiPO-iEpE.jpg?size=810x1080&quality=96&sign=ab822bd6b239ec5012f4bf860d8c21c4&type=album'
     return (<>
         {router.query.name!=''&&<Head>
