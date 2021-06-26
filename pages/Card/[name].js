@@ -1,7 +1,7 @@
 import {useRouter} from 'next/router'
 import Head from 'next/head'
 import React from 'react'
-export default function Card({title, content}) {
+export default function Card() {
     const router = useRouter()
     const description = 'это моя компания'
     const [title, setTitle] = React.useState('')
