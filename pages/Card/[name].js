@@ -4,7 +4,7 @@ import React from 'react'
 export default function Card(props) {
     const router = useRouter()
     console.log(props)
-    const urimg = 'https://sun9-53.userapi.com/impg/kr5c5dvuzJiaM4KDx8qTWwMvUZNpITCPBXtqjQ/cCJiPO-iEpE.jpg?size=810x1080&quality=96&sign=ab822bd6b239ec5012f4bf860d8c21c4&type=album'
+    const urimg = 'https://pbs.twimg.com/media/E2GqwPhWUAAwxqT?format=jpg&name=small'
     return (<>
        <Head>
             <title>{props.name.name}</title>
@@ -26,7 +26,7 @@ export default function Card(props) {
 }
 
 Card.getInitialProps = async ({query , res}) => {
-    return {name: query, description: 'dlkasjdlkasjkdlaskldjklasdjlkaskldj'}
+    return {name: query, description: 'I just finished the first @masseffect. I love game and can’t wait to jump into Mass Effect 2. Thank you @bioware @CaseyDHudson @DrewKarpyshyn and so many others for making this game. ❤️#platinumtrophy'}
 }
 
 
