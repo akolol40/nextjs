@@ -17,6 +17,12 @@ export default function Card(props) {
             <meta property="og:title" content={props.name.name}/>
             <meta property="og:image" content={urimg}/>
             <meta property="og:description" content={props.description}/>
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={props.name.name} />
+            <meta name="twitter:description" content={props.description} />
+            <meta name="twitter:image" content={urimg} />
+            <meta property="og:image:width" content="1500" />
+            <meta property="og:image:height" content="600" />
         </Head>
         <div className="card" style={{width: '18rem'}}>
         <img className="card-img-top" src={urimg} alt="Card image cap"/>
