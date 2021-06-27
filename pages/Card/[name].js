@@ -8,9 +8,12 @@ export default function Card(props) {
     return (<>
        <Head>
             <title>{props.name.name}</title>
+
             <meta name="keywords" content='apknavigator' />
             <meta name="description" content={props.description}/> 
             <meta name="robots" content="index, follow"></meta>
+            <meta property="og:site_name" content="APKNAV" />
+            <meta property="og:type" content="article" />
             <meta property="og:title" content={props.name.name}/>
             <meta property="og:image" content={urimg}/>
             <meta property="og:description" content={props.description}/>
